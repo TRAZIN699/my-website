@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lesson Page</title>
+</head>
+<body>
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+</style>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            color: maroon;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 80%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .left {
+            text-align: left;
+        }
+    </style>
+<h2>Task 1: Lesson Page</h2>
+<ul>
+    <li><a href="#lesson1">Lesson 1: Introduction</a></li>
+    <li><a href="#lesson2">Lesson 2: HTML Basics</a></li>
+    <li><a href="#lesson3">Lesson 3: CSS Styling</a></li>
+    <li><a href="#lesson4">Lesson 4: JavaScript</a></li>
+</ul>
+
+<hr>
+
+<!-- Lesson Sections -->
+<h2 id="lesson1">Lesson 1: Introduction</h2>
+<p>HTML (HyperText Markup Language) is the standard markup language used to create and structure content on the web, serving as the fundamental building block of the World Wide Web.
+Developed by Tim Berners-Lee in 1990 (or 1991 according to some sources), HTML defines the meaning and organization of web content rather than its visual appearance, which is handled by CSS and JavaScript.
+
+HTML is not a programming language but a markup language that uses tags enclosed in angle brackets (e.g., <tag>) to annotate text, images, and other elements.  These tags form a tree of nodes that instruct web browsers on how to display information, such as headings, paragraphs, links, lists, and media. </p>
+
+<h2 id="lesson2">Lesson 2: HTML Basics</h2>
+<p>HTML (HyperText Markup Language) is the standard markup language used to structure and define the content of web pages, utilizing elements and tags to organize text, images, links, and multimedia.  It serves as the foundation of nearly all websites, with over 95% of web pages relying on it today.
+
+Basic Document Structure Every HTML document requires a specific skeleton to function correctly in a browser:</p>
+<ul style="list-style-type: circle;">
+    <li>!DOCTYPE html: Declares the document type and version (HTML5) at the very top.
+        <li> html: The root element that encloses the entire document.</li>
+<li>head: Contains metadata (like the title, character encoding, and linked stylesheets) that is not displayed on the page.</li>
+<li>title: Defines the text shown in the browser tab or window.</li>
+<li>body: Encloses all visible content (text, images, headings) that users see on the webpage.</li>
+
+</ul>
+<p>Common Basic Tags Developers use specific tags to define different parts of a page's layout:</p>
+<ul style="list-style-type: circle;">
+    <li>Headings: h1 to h6 for titles, where h1 is the most important. </li>
+<li>Paragraphs: p for blocks of text. </li>
+<li>Links: a for creating hyperlinks. </li>
+<li>Lists: ul for unordered lists and ol for ordered lists.</li>
+<li>Images: img for embedding images.</li>
+<li>Formatting: Various tags for styling text (e.g., strong, em, code).</li>
+</ul>
+
+<h2 id="lesson3">Lesson 3: CSS Styling</h2>
+<p>CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of HTML documents, allowing developers to control colors, fonts, sizes, spacing, layout, and background images.  It is a rule-based language where you define selectors to target specific HTML elements and apply declarations containing property-value pairs within curly braces.
+
+There are three primary methods to add CSS to an HTML document:</p>
+<ul style="list-style-type: circle;">
+    <li>Inline CSS: Applied directly to an HTML element using the style attribute (e.g., p style="color: red;").</li>
+<li>Internal CSS: Placed within a style tag in the head section of the document, allowing you to style multiple elements without affecting external files.</li>
+<li>External CSS: Linked via a separate .css file using the link>tag in the head, enabling reuse across multiple pages and better organization.</li>
+</ul>
+<p>CSS rules follow a specific syntax where the selector identifies the element to style, followed by a block containing properties and their values separated by colons and semicolons.  For example, p { color: red; } selects all paragraph elements and sets their text color to red. The cascading nature of CSS means that styles applied to parent elements (like body) automatically apply to child elements unless overridden by more specific rules. </p>
+
+
+<h2 id="lesson4">Lesson 4: JavaScript</h2>
+<p>JavaScript (JS) is a high-level, multi-paradigm programming language and a core technology of the World Wide Web, alongside HTML and CSS. Created by Brendan Eich in 1995, it is used by 98.9% to 99% of all websites to enable dynamic client-side behavior, such as interactive elements, animations, and real-time content updates.</p>
+<p>Key characteristics and capabilities include:</p>
+<ul style="list-style-type: circle;">
+    <li>Execution: It is an interpreted (or just-in-time compiled) language that runs on JavaScript engines within web browsers and on servers via runtimes like Node.js.</li>
+    <li>Paradigms: It supports event-driven, functional, imperative, and object-oriented programming styles, utilizing prototypal inheritance (though ES6 introduced class syntax as syntactic sugar). </li>
+    <li>Typing: It features dynamic, weak, duck typing and garbage collection, meaning variable types are determined at runtime and can change. </li>
+    <li>Asynchronous Programming: It supports asynchronous operations, allowing non-blocking execution of code, particularly useful for handling I/O operations and API calls.</li>
+    <li>Libraries and Frameworks: A rich ecosystem of libraries and frameworks (e.g., React, Angular, Vue) exists to facilitate rapid development of complex web applications.</li>
+    <li>Performance: Modern JavaScript engines offer high performance through optimization techniques like Just-In-Time (JIT) compilation.</li>
+</ul>
+<p>While TypeScript exists as a superset that adds static typing to JavaScript, the core language remains the dominant client-side scripting language, capable of handling everything from simple page interactions to complex Single Page Applications (SPA) and full-stack development. </p>
+<p>Core Functionality & How It Works: </p>
+<ul style="list-style-type: circle;">
+    <li>Client-Side Execution: JavaScript code is executed directly in the user's web browser. This allows for immediate interaction (like form validation or animations) without constant communication with the server, leading to faster, more responsive applications.</li>
+    <li>he DOM: It interacts with the Document Object Model (DOM), which is a programming interface for web documents.  JavaScript can dynamically change a page's structure, style, and content by accessing and modifying the DOM.</li>
+    <li>Event-Driven: JavaScript is fundamentally event-driven. It can respond to user interactions like clicks, keystrokes, or page loads, triggering specific functions to execute.</li>
+    <li>Dynamic Typing: Variables in JavaScript are not bound to a specific data type, allowing for flexibility during development (e.g., a variable can hold a number and later be reassigned to a string).</li>
+</ul>
+
+</body>
+</html>
