@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color:  rgba(245, 245, 245, 0.437);
+        }
+
+        .title {
+            color: #b30000;
+            font-weight: bold;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .product-card {
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .product-img {
+            height: 200px;
+            object-fit: contain;
+            padding: 15px;
+        }
+
+        .price {
+            color: #555;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<div class="container">
+    <h2 class="title">Task 3: BOOTSTRAP PRODUCT LIST</h2>
+
+    <div class="row g-4">
+
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/xP0ilHBJ4hY1PZE-q8v-oBN7SxYZITnyUWFNbUTeUWA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjIv/ODYyLzM3NS9zbWFs/bC9ibGFuay1ibGFj/ay1tYWxlLWhvb2Rp/ZS1zd2VhdHNoaXJ0/LWxvbmctc2xlZXZl/LXdpdGgtY2xpcHBp/bmctcGF0aC1pbGx1/c3RyYXRpb24tYWkt/Z2VuZXJhdGl2ZS1m/cmVlLXBob3RvLmpw/Zw" class="product-img">
+                <div class="card-body">
+                    <h6>Black Hoodie</h6>
+                    <p class="price">$35.99</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/mMWAxaFl9HMVB-xlVrMJ4RYTY53YpBjrK7mdNQDC34U/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5obS5jb20vYXNz/ZXRzL2htLzg3Lzhl/Lzg3OGU1MGUwZWU3/YjhjOTc1YTZlNzhi/YmUxY2RjNTM4MDdj/MWU0YjIuanBn" class="product-img" >
+                <div class="card-body">
+                    <h6>Oversized Brown-Jacket</h6>
+                    <p class="price">$59.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/JE3RudPdD12jttrDb-KfxdhdCxgPcqoO0KZMWVDzrGE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzIx/OTMvNTgwOS9maWxl/cy9JMDM2NTkzX0I4/OV8wMi1TVC0wMy5q/cGc_dj0xNzcwNDg5/MDA3JndpZHRoPTIw/MDAmaGVpZ2h0PTMw/MDAmY3JvcD1jZW50/ZXI" class="product-img">
+                <div class="card-body">
+                    <h6>Detroit Jacket</h6>
+                    <p class="price">$29.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/JNgy1rr12q8HRzhdE-aljIzqSxCqKKbSql85j-09LOQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzI5/ODcvMDc1OC9maWxl/cy8xODg2MDY5OF8x/MDAxODQyXzg1My1J/bmNlbnNlLUJlaWdl/XzAyLmpwZz92PTE3/NzY0NDE3OTQ" class="product-img">
+                <div class="card-body">
+                    <h6>Zipper Jacket</h6>
+                    <p class="price">$49.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/q7PytOVcAYRXGs1SsuzF5AbFRrw8jmfvGmJHjQ_St0Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjF2MVpZTUpVSEwu/anBn" class="product-img">
+                <div class="card-body">
+                    <h6>Basic Fleet Hoodie</h6>
+                    <p class="price">$28.99</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/7BXuKBfBkvoUks1YO2xMJ2EeAkg3lFpkvtn8xyoDzg4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zbGFt/Z29vZHMuY29tL2Nk/bi9zaG9wL2ZpbGVz/L2Rtdi1jaXR5LXBh/Y2staG9vZGllLTYy/MjI1Ny5qcGc_dj0x/NzI2MTY3NjQyJndp/ZHRoPTEwODA" class="product-img" >
+                <div class="card-body">
+                    <h6>SLAM Goods Hoodie</h6>
+                    <p class="price">$90.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/agt5NbNBA7FlKfc8olBUH3DZTsOAgP7bq1xEsdn4_eM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kbXZn/ZWFyLmNvbS9jZG4v/c2hvcC9wcm9kdWN0/cy9ocnVuZG12Z3Jh/eTFfMTEweDExMEAy/eC5qcGc_dj0xNTg4/MTM4OTcx" class="product-img">
+                <div class="card-body">
+                    <h6>RUN DMV Hoodie</h6>
+                    <p class="price">$88.50</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/ajGBXE71NWTlINpoTeihE6FzlCtOOw6ZzGinmgh-ecI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/NDg0NjAzOS9waG90/by9ibGFuay13aGl0/ZS1ob29kaWUtaGFu/Z2luZy1vbi1hLWhh/bmdlci1hZ2FpbnN0/LWdyYXktYmFja2dy/b3VuZC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9SFBsTzRS/cFUxTHB6YjdxRmpy/VkRjeWJBMkRUcmp3/MXo3TC1DVG5hYzls/ND0" class="product-img">
+                <div class="card-body">
+                    <h6>Blank White Hoodie</h6>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+        </div>
+<div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/cJ6HmQ69EUE4y4UztNJHgtm5Z_3xZlP976H2MTx_uHM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGVlcHVibGlj/LmNvbS9kZXJpdmVk/L3Byb2R1Y3Rpb24v/ZGVzaWducy80MjQ5/OTcxN18wLzE2ODA2/NTQyNTEvaV9tOmJp/X3Byb2R1Y3Rpb25f/YmxhbmtzX3ltd2xv/amRsYjlwZGx4Z2Nt/Y2s0XzE0NDY4NDA2/NTIsY18wXzBfNDY1/eCxzXzMxMyxxXzkw/LmpwZw" class="product-img">
+                <div class="card-body">
+                    <h6>Greedy Grinner Hoodie</h6>
+                    <p class="price">$199.99</p>
+                </div>
+            </div>
+        </div>
+
+<div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/4nQejwoD6zkM26TF2XHbLysypa2D4wP74ha_ILjZuho/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvODQw/MzgxNjU0L3Bob3Rv/L2JsYW5rLWhvb2Rp/ZS1zd2VhdHNoaXJ0/LWNvbG9yLWJsdWUt/ZnJvbnQtdmlldy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/cjVQSTd3NGpmaGJW/NGxaUVYyZGllaElj/dk1rdW9HellueE1V/ZG5GUzBTQT0" class="product-img">
+                <div class="card-body">
+                    <h6>Blue Hoodie</h6>
+                    <p class="price">$89.99</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/UaQ6_SQVbP6gY1RIXvcVIAR2qHOAwsYe0HiNFBagQsU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGVlcHVibGlj/LmNvbS9kZXJpdmVk/L3Byb2R1Y3Rpb24v/ZGVzaWducy8yMzM4/OTY4XzAvMTUxNzgw/NDAyMC9pX206Ymlf/cHJvZHVjdGlvbl9i/bGFua3NfeW13bG9q/ZGxiOXBkbHhnY21j/azRfMTQ0Njg0MDY1/MixjXzI3XzkxXzQx/OXgsc18zMTMscV85/MC5qcGc" class="product-img">
+                <div class="card-body">
+                    <h6>NO STEP ON SNEK Hoodie</h6>
+                    <p class="price">$159.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card product-card text-center">
+                <img src="https://imgs.search.brave.com/cglms0JzQxt-4dVDb6tzUFe7GojxsMf78MAwEVDugUo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGVlcHVibGlj/LmNvbS9kZXJpdmVk/L3Byb2R1Y3Rpb24v/ZGVzaWducy81NDAy/OTM2OF8wLzE3MDE1/ODk2MDkvaV9tOmJp/X3Byb2R1Y3Rpb25f/YmxhbmtzX3ltd2xv/amRsYjlwZGx4Z2Nt/Y2s0XzE0NDY4NDA2/NTIsY182NV8xMDRf/MzM1eCxzXzMxMyxx/XzkwLmpwZw" class="product-img">
+                <div class="card-body">
+                    <h6>Aries Hoodie</h6>
+                    <p class="price">$299.99</p>
+                </div>
+            </div>
+        </div>
+
+
+
